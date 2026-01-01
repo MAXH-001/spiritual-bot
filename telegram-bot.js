@@ -427,7 +427,7 @@ async function createUserWhatsAppQR(userId, userName) {
                         console.error(`❌ FAILED to send QR to ${userId}:`, sendError);
                         console.error('Full error:', JSON.stringify(sendError, null, 2));
                         
-     Try sending as document instead
+//     Try sending as document instead
                         try {
                             console.log('🔄 Trying to send as document...');
                             await bot.sendDocument(userId, qrImageBuffer, {
